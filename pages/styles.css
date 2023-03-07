@@ -401,7 +401,7 @@ textarea {
     border-top: 2px solid #FFF;
     border-right: 2px solid transparent;
     box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite; 
 }
 
 @keyframes rotation {

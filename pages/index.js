@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
-
 const Home = () => {
   return (
     <div className="root">
