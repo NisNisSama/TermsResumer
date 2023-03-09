@@ -38,17 +38,22 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Generate your coolest adventure story !</h1>
+            <h1>Terms of Use and Privacy Policy Resumer </h1>
           </div>
           <div className="header-subtitle">
-            <h2>Write an epic title for your adventure
-              <br/> Ex: Yugi and the blue-eyed dragon
+            <h2>
+              Ever wonder what they are saying in those very long <i>Terms of Use</i> or <i>Privacy Policy</i> ?
             </h2>
           </div>
         </div>
+      </div>
+      <div className='container'>
+        <h2 className='subtitle'>
+          Copy that long document and paste it below, we will resume it for you !
+        </h2>
         <div className="prompt-container">
-          <textarea placeholder="start typing here" className="prompt-box" value={userInput}
-          onChange={onUserChangedText} />
+            <textarea placeholder="Copy the document here" className="prompt-box" value={userInput}
+            onChange={onUserChangedText} />
         </div>
         <div className="prompt-buttons">
           <a
@@ -56,10 +61,12 @@ const Home = () => {
             onClick={callGenerateEndpoint}
           >
             <div className="generate">
-            {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+            {isGenerating ? <span className="loader"></span> : <p>Resume</p>}
             </div>
           </a>
         </div>
+      </div>
+      <div className='container'>
         <div className="output">
           <div className="output-header-container">
             <div className="output-header">
@@ -70,18 +77,6 @@ const Home = () => {
             <p>{apiOutput}</p>
           </div>
         </div>
-      </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
-          </div>
-        </a>
       </div>
     </div>
   );
