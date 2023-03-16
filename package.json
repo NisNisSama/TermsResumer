@@ -17,13 +17,7 @@
     "next": "^13.0.3",
     "openai": "^3.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-<<<<<<< HEAD
-  },
-  "devDependencies": {
-    "pdf.js-extract": "^0.2.1",
+    "react-dom": "18.2.0",
     "pdfjs-dist": "^3.4.120"
-=======
->>>>>>> b2feafc556e9105f4688710fff153d5a15a5c9b1
   }
 }
