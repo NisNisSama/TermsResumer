@@ -12,8 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg , black 10%, gray 10%, gray 20%, black 20%, black 80%, gray 80%);
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     overflow: scroll;
+    scroll-behavior: smooth;
     height: 100vh;
 }
 
@@ -33,7 +34,7 @@ body {
     height: 100%;
     width: 90%;
     scroll-behavior: smooth;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     box-sizing: border-box;
 }
 
@@ -182,6 +183,8 @@ body {
     border: #acacac solid 1.5px;
     text-align: center;
     padding: 50px 0px 0px 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .output-content p {
@@ -192,10 +195,11 @@ body {
 .output-content small{
     position: absolute;
     bottom: 0px;
-    left: 38%;
     display: block;
     padding: 10px;
     font-size: 13px;
+    width: 100%;
+    text-align: center;
 }
 
 .copy{
@@ -214,4 +218,31 @@ body {
     object-fit: scale-down;
     width: 100%;
     height: 100%;
+}
+
+.pdf-container{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background: #acacacc1;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.pdf-label{
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.pdf-box{
+    width: 60%;
+}
+
+.pdf-box::file-selector-button{
+    background: #000;
+    color: #FFF;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
